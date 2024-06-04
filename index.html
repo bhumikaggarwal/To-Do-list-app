@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>To Do App</h1>
+        <div class="ToDo-App">
+            <button id="open-task-form-btn" class = "btn large-btn">
+                Add New Task
+            </button>
+      
+        <form class="task-form-hidden" id="task-form">
+            <div class="task-form-header">
+            <button class="close-task-form-btn" id="close-task-form-btn" type="button" aria-label="close"><svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"><path fill="#F44336" d="M21.5 4.5H26.501V43.5H21.5z" transform="rotate(45.001 24 24)" /><path fill="#F44336" d="M21.5 4.5H26.5V43.501H21.5z" transform="rotate(135.008 24 24)" /></svg>
+            </button>
+        </div>
+        <div class="task-form-body">
+            <label class="task-form-label" for="title-input">Title</label>
+            <input type="text" id="title-input" class="form-control" value="" required>
+            <label class="task-form-label" for="date-input">Date</label>
+            <input type="date"  id="date-input" class="form-control" value="" required>
+            <label class="task-form-label" for="description-input">Description</label>
+            <textarea class="form-control" id="description-input" rows="5" cols="30"></textarea>
+        </div>
+        <div class="task-form-footer">
+            <button id="add-or-update-task-form-btn" class="btn large-btn">
+                Add Task
+            </button>
+        </div>
+        </form>
+        <dialog id="confirm-close-dialog">
+            <form method="dialog">
+                <p class="discard-message-text">Discard Unsaved Changes?</p>
+                <div class="confirm-close-dialog-btn-container">
+                    <button id="close-button">
+                        Close Button
+                    </button>
+                    <button id="discard-button">
+                        Discard Button
+                    </button>
+                </div>
+            </form>
+        </dialog>
+        <div id="tasks-container"></div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
